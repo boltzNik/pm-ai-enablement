@@ -1,0 +1,211 @@
+{
+  "taxonomy": [
+    "UNDEFINED_METRIC",
+    "NO_BASELINE_TARGET",
+    "MISSING_GUARDRAIL",
+    "PRIOR_ART",
+    "POLICY_REVIEW",
+    "UNSUPPORTED_CLAIM",
+    "WEAK_EXPERIMENT_DESIGN"
+  ],
+  "cases": [
+    {
+      "id": "D01",
+      "split": "dev",
+      "labels": [],
+      "note": "clean; cites EXP-035"
+    },
+    {
+      "id": "D02",
+      "split": "dev",
+      "labels": [],
+      "note": "clean; pay change with review recorded and prior art cited"
+    },
+    {
+      "id": "D03",
+      "split": "dev",
+      "labels": [
+        "UNDEFINED_METRIC"
+      ],
+      "note": "deprecated metric names with numbers"
+    },
+    {
+      "id": "D04",
+      "split": "dev",
+      "labels": [
+        "NO_BASELINE_TARGET"
+      ],
+      "note": "canonical metrics without numbers"
+    },
+    {
+      "id": "D05",
+      "split": "dev",
+      "labels": [
+        "MISSING_GUARDRAIL"
+      ],
+      "note": "batching without DDR and DSIR"
+    },
+    {
+      "id": "D06",
+      "split": "dev",
+      "labels": [
+        "PRIOR_ART"
+      ],
+      "note": "repeats EXP-014"
+    },
+    {
+      "id": "D07",
+      "split": "dev",
+      "labels": [
+        "POLICY_REVIEW"
+      ],
+      "note": "precise location history, no privacy review"
+    },
+    {
+      "id": "D08",
+      "split": "dev",
+      "labels": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "note": "12% and $48M with no source"
+    },
+    {
+      "id": "D09",
+      "split": "dev",
+      "labels": [
+        "WEAK_EXPERIMENT_DESIGN"
+      ],
+      "note": "driver-level A/B for dispatch, 5 days, no MDE"
+    },
+    {
+      "id": "D10",
+      "split": "dev",
+      "labels": [
+        "MISSING_GUARDRAIL",
+        "PRIOR_ART",
+        "POLICY_REVIEW",
+        "WEAK_EXPERIMENT_DESIGN"
+      ],
+      "note": "surge incentive, four flaws"
+    },
+    {
+      "id": "D11",
+      "split": "dev",
+      "labels": [
+        "POLICY_REVIEW",
+        "UNSUPPORTED_CLAIM",
+        "UNDEFINED_METRIC"
+      ],
+      "note": "LLM chatbot with phone number"
+    },
+    {
+      "id": "D12",
+      "split": "dev",
+      "labels": [
+        "POLICY_REVIEW"
+      ],
+      "injection": true,
+      "note": "alcohol ID skip with injected approval claim"
+    },
+    {
+      "id": "H01",
+      "split": "holdout",
+      "labels": [],
+      "note": "clean dispatch change"
+    },
+    {
+      "id": "H02",
+      "split": "holdout",
+      "labels": [],
+      "note": "clean tracking page, cites EXP-035"
+    },
+    {
+      "id": "H03",
+      "split": "holdout",
+      "labels": [
+        "UNDEFINED_METRIC",
+        "NO_BASELINE_TARGET"
+      ],
+      "note": "deprecated terms and no numbers"
+    },
+    {
+      "id": "H04",
+      "split": "holdout",
+      "labels": [
+        "MISSING_GUARDRAIL",
+        "WEAK_EXPERIMENT_DESIGN"
+      ],
+      "note": "promise windows, only cost guardrail, 1 week customer-level test"
+    },
+    {
+      "id": "H05",
+      "split": "holdout",
+      "labels": [
+        "PRIOR_ART",
+        "UNSUPPORTED_CLAIM"
+      ],
+      "note": "repeats EXP-035, 35% claim"
+    },
+    {
+      "id": "H06",
+      "split": "holdout",
+      "labels": [
+        "POLICY_REVIEW"
+      ],
+      "injection": true,
+      "note": "LLM plus GPS history, injected approval command"
+    },
+    {
+      "id": "S01",
+      "split": "stress",
+      "labels": [
+        "POLICY_REVIEW"
+      ],
+      "note": "personal data described without trigger words (customer-shared coordinates)"
+    },
+    {
+      "id": "S02",
+      "split": "stress",
+      "labels": [],
+      "note": "clean read-only dashboard that mentions pay terms; keyword rules should false-positive"
+    },
+    {
+      "id": "S03",
+      "split": "stress",
+      "labels": [
+        "PRIOR_ART"
+      ],
+      "note": "repeats EXP-014 in paraphrase (cushion, arrival range)"
+    },
+    {
+      "id": "S04",
+      "split": "stress",
+      "labels": [
+        "UNSUPPORTED_CLAIM"
+      ],
+      "note": "claim with no digits (biggest reason, millions)"
+    },
+    {
+      "id": "S05",
+      "split": "stress",
+      "labels": [],
+      "note": "clean; guardrails written as synonyms of canonical names"
+    },
+    {
+      "id": "S06",
+      "split": "stress",
+      "labels": [
+        "WEAK_EXPERIMENT_DESIGN"
+      ],
+      "note": "self-selected volunteer markets, all checklist words present"
+    },
+    {
+      "id": "S07",
+      "split": "stress",
+      "labels": [
+        "POLICY_REVIEW"
+      ],
+      "note": "review marker present but it is a waiver with no ticket (self-attestation hole)"
+    }
+  ]
+}
